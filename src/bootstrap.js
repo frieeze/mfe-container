@@ -8,6 +8,8 @@ import Counter from 'counter/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const counterURL = process.env.COUNTER_BASE_URL || 'http://localhost:3001';
+
 // const router = createHashRouter([
 //   {
 //     path: '/',
@@ -21,12 +23,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <Nav />
-
     {/* <RouterProvider router={router} /> */}
     <App />
     <React.Suspense>
-      <Counter />
+      <>
+        <h2>Component pulled from {counterURL}</h2>
+        <Counter />
+      </>
     </React.Suspense>
   </React.StrictMode>,
 );
