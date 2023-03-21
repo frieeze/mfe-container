@@ -1,6 +1,7 @@
 const deps = require('./package.json').dependencies;
 
-const counterBaseURL = process.env.COUNTER_BASE_URL || 'http://localhost:3001';
+const counterBaseURL =
+  process.env.REACT_APP_COUNTER_BASE_URL || 'http://localhost:3001';
 
 console.log('counterBaseURL', counterBaseURL);
 

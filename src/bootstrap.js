@@ -8,7 +8,7 @@ import Counter from 'counter/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const counterURL = process.env.COUNTER_BASE_URL || 'http://localhost:3001';
+const counterURL = process.env.REACT_APP_COUNTER_BASE_URL;
 
 // const router = createHashRouter([
 //   {
