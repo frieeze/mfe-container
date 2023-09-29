@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import Nav from './components/nav';
 import Counter from 'counter/Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
